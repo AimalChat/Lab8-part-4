@@ -137,10 +137,11 @@ public enum Directions
 44. Add your own look command to zuul-with-enums-v2. Do you only need to change the CommandWord 
 type? 
 
-44b.
+44b.Yes, well no. You have to add the look() method to which it points to and add a seperate case
+for LOOK.
 
 45. Change the word associated with the help command in CommandWord. Is this change automatically 
 reflected in the welcome text when you start the game? Take a look at the printWelcome method in the 
 Game class to see how this has been achieved
 
-45b.
+45b. YES!
