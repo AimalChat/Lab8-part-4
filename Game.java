@@ -106,11 +106,17 @@ public class Game
             case HELP    -> printHelp();
             case GO      -> goRoom(command);
             case QUIT    -> wantToQuit = quit(command);
+            case LOOK    -> look();    
         }
         return wantToQuit;
     }
 
     // implementations of user commands:
+
+    private void look()
+    {
+        System.out.println(currentRoom.getLongDescription());
+    }
 
     /**
      * Print out some help information.
